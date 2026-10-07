@@ -21,6 +21,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "display.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -96,6 +97,9 @@ int main(void) {
     MX_SPI1_Init();
     MX_TIM4_Init();
     /* USER CODE BEGIN 2 */
+    Display_InitHardware();
+    Display_Init();
+    Display_FillScreen(0x0000);
     /* USER CODE END 2 */
 
     /* Infinite loop */
