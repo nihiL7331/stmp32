@@ -1,0 +1,1827 @@
+[1/24] Building ASM object CMakeFiles/stmp32.dir/startup_stm32f411xe.s.o
+FAILED: [code=1] CMakeFiles/stmp32.dir/startup_stm32f411xe.s.o 
+/usr/bin/cc -DDEBUG -DSTM32F411xE -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -I/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Core/Inc -I/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc -I/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include -g -MD -MT CMakeFiles/stmp32.dir/startup_stm32f411xe.s.o -MF CMakeFiles/stmp32.dir/startup_stm32f411xe.s.o.d -o CMakeFiles/stmp32.dir/startup_stm32f411xe.s.o -c /home/nihil/repos/stmp32/startup_stm32f411xe.s
+/home/nihil/repos/stmp32/startup_stm32f411xe.s: Assembler messages:
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:27: Error: unknown pseudo-op: `.syntax'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:28: Error: unknown pseudo-op: `.cpu'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:29: Error: unknown pseudo-op: `.fpu'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:30: Error: unknown pseudo-op: `.thumb'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:61: Error: no such instruction: `ldr sp,=_estack'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:64: Error: no such instruction: `bl SystemInit'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:67: Error: no such instruction: `ldr r0,=_sdata'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:68: Error: no such instruction: `ldr r1,=_edata'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:69: Error: no such instruction: `ldr r2,=_sidata'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:70: Warning: `r3' is not valid here (expected `(%rsi)')
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:70: Error: expecting operand after ','; got nothing
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:71: Error: no such instruction: `b LoopCopyDataInit'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:74: Error: no such instruction: `ldr r4,[r2,r3]'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:75: Error: missing ']'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:75: Error: too many memory references for `str'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:76: Error: expecting operand after ','; got nothing
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:79: Error: too many memory references for `add'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:80: Error: operand size mismatch for `cmp'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:81: Error: no such instruction: `bcc CopyDataInit'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:84: Error: no such instruction: `ldr r2,=_sbss'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:85: Error: no such instruction: `ldr r4,=_ebss'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:86: Warning: `r3' is not valid here (expected `(%rsi)')
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:86: Error: expecting operand after ','; got nothing
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:87: Error: no such instruction: `b LoopFillZerobss'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:90: Error: number of operands mismatch for `str'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:91: Error: expecting operand after ','; got nothing
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:94: Error: operand size mismatch for `cmp'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:95: Error: no such instruction: `bcc FillZerobss'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:98: Error: no such instruction: `bl __libc_init_array'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:100: Error: no such instruction: `bl main'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:101: Error: no such instruction: `bx lr'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:114: Error: no such instruction: `b Infinite_Loop'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:243: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:246: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:249: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:252: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:255: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:258: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:261: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:264: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:267: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:270: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:273: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:276: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:279: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:282: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:285: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:288: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:291: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:294: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:297: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:300: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:303: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:306: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:309: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:312: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:315: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:318: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:321: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:324: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:327: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:330: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:333: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:336: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:339: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:342: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:345: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:348: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:351: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:354: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:357: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:360: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:363: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:366: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:369: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:372: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:375: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:378: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:381: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:384: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:387: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:390: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:393: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:396: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:399: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:402: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:405: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:408: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:411: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:414: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:417: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:420: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:423: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:426: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:429: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:432: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:435: Error: unknown pseudo-op: `.thumb_set'
+/home/nihil/repos/stmp32/startup_stm32f411xe.s:438: Error: unknown pseudo-op: `.thumb_set'
+[2/24] Building C object cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c.o
+In file included from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:140,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h:27,
+                 from /home/nihil/repos/stmp32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c:20:
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h: In function '__NVIC_SetVector':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h:1913:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1913 |   uint32_t *vectors = (uint32_t *)SCB->VTOR;
+      |                       ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h: In function '__NVIC_GetVector':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h:1929:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1929 |   uint32_t *vectors = (uint32_t *)SCB->VTOR;
+      |                       ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h: In function 'LL_RCC_PLLI2S_ConfigDomain_I2S':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h:5666:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 5666 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&RCC->PLLCFGR) + (Source & 0x80U)));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h:5666:25: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 5666 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&RCC->PLLCFGR) + (Source & 0x80U)));
+      |                         ^
+[3/24] Building C object cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c.o
+In file included from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:140,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h:28,
+                 from /home/nihil/repos/stmp32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c:21:
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h: In function '__NVIC_SetVector':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h:1913:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1913 |   uint32_t *vectors = (uint32_t *)SCB->VTOR;
+      |                       ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h: In function '__NVIC_GetVector':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h:1929:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1929 |   uint32_t *vectors = (uint32_t *)SCB->VTOR;
+      |                       ^
+[4/24] Building C object cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c.o
+In file included from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:140,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from /home/nihil/repos/stmp32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c:89:
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h: In function '__NVIC_SetVector':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h:1913:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1913 |   uint32_t *vectors = (uint32_t *)SCB->VTOR;
+      |                       ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h: In function '__NVIC_GetVector':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h:1929:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1929 |   uint32_t *vectors = (uint32_t *)SCB->VTOR;
+      |                       ^
+/home/nihil/repos/stmp32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c: In function 'HAL_I2SEx_TransmitReceive_DMA':
+/home/nihil/repos/stmp32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c:620:45: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  620 |     status = HAL_DMA_Start_IT(hi2s->hdmarx, (uint32_t)&I2SxEXT(hi2s->Instance)->DR, *(uint32_t *)tmp, hi2s->RxXferSize);
+      |                                             ^
+/home/nihil/repos/stmp32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c:627:63: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  627 |     status = HAL_DMA_Start_IT(hi2s->hdmatx, *(uint32_t *)tmp, (uint32_t)&hi2s->Instance->DR, hi2s->TxXferSize);
+      |                                                               ^
+/home/nihil/repos/stmp32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c:643:63: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  643 |     status = HAL_DMA_Start_IT(hi2s->hdmatx, *(uint32_t *)tmp, (uint32_t)&I2SxEXT(hi2s->Instance)->DR, hi2s->TxXferSize);
+      |                                                               ^
+/home/nihil/repos/stmp32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c:650:45: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  650 |     status = HAL_DMA_Start_IT(hi2s->hdmarx, (uint32_t)&hi2s->Instance->DR, *(uint32_t *)tmp, hi2s->RxXferSize);
+      |                                             ^
+[5/24] Building C object cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.o
+In file included from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:140,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from /home/nihil/repos/stmp32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c:67:
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h: In function '__NVIC_SetVector':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h:1913:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1913 |   uint32_t *vectors = (uint32_t *)SCB->VTOR;
+      |                       ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h: In function '__NVIC_GetVector':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h:1929:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1929 |   uint32_t *vectors = (uint32_t *)SCB->VTOR;
+      |                       ^
+[6/24] Building C object cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c.o
+In file included from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:140,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from /home/nihil/repos/stmp32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c:187:
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h: In function '__NVIC_SetVector':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h:1913:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1913 |   uint32_t *vectors = (uint32_t *)SCB->VTOR;
+      |                       ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h: In function '__NVIC_GetVector':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h:1929:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1929 |   uint32_t *vectors = (uint32_t *)SCB->VTOR;
+      |                       ^
+/home/nihil/repos/stmp32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c: In function 'HAL_I2S_Transmit_DMA':
+/home/nihil/repos/stmp32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c:1233:34: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1233 |                                  (uint32_t)hi2s->pTxBuffPtr,
+      |                                  ^
+/home/nihil/repos/stmp32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c:1234:34: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1234 |                                  (uint32_t)&hi2s->Instance->DR,
+      |                                  ^
+/home/nihil/repos/stmp32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c: In function 'HAL_I2S_Receive_DMA':
+/home/nihil/repos/stmp32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c:1331:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1331 |   if (HAL_OK != HAL_DMA_Start_IT(hi2s->hdmarx, (uint32_t)&hi2s->Instance->DR, (uint32_t)hi2s->pRxBuffPtr,
+      |                                                ^
+/home/nihil/repos/stmp32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c:1331:79: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1331 |   if (HAL_OK != HAL_DMA_Start_IT(hi2s->hdmarx, (uint32_t)&hi2s->Instance->DR, (uint32_t)hi2s->pRxBuffPtr,
+      |                                                                               ^
+[7/24] Building C object cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c.o
+In file included from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:140,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h:40,
+                 from /home/nihil/repos/stmp32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c:19:
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h: In function '__NVIC_SetVector':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h:1913:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1913 |   uint32_t *vectors = (uint32_t *)SCB->VTOR;
+      |                       ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h: In function '__NVIC_GetVector':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h:1929:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1929 |   uint32_t *vectors = (uint32_t *)SCB->VTOR;
+      |                       ^
+In file included from /home/nihil/repos/stmp32/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c:20:
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h: In function 'LL_RCC_PLLI2S_ConfigDomain_I2S':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h:5666:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 5666 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&RCC->PLLCFGR) + (Source & 0x80U)));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h:5666:25: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 5666 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&RCC->PLLCFGR) + (Source & 0x80U)));
+      |                         ^
+[8/24] Building C object CMakeFiles/stmp32.dir/Core/Src/main.c.o
+FAILED: [code=1] CMakeFiles/stmp32.dir/Core/Src/main.c.o 
+/usr/bin/cc -DDEBUG -DSTM32F411xE -DUSE_FULL_LL_DRIVER -DUSE_HAL_DRIVER -I/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Core/Inc -I/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc -I/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include -g -std=gnu11 -MD -MT CMakeFiles/stmp32.dir/Core/Src/main.c.o -MF CMakeFiles/stmp32.dir/Core/Src/main.c.o.d -o CMakeFiles/stmp32.dir/Core/Src/main.c.o -c /home/nihil/repos/stmp32/Core/Src/main.c
+In file included from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:140,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:154,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Core/Inc/main.h:30,
+                 from /home/nihil/repos/stmp32/Core/Src/main.c:20:
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h: In function '__NVIC_SetVector':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h:1913:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1913 |   uint32_t *vectors = (uint32_t *)SCB->VTOR;
+      |                       ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h: In function '__NVIC_GetVector':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/core_cm4.h:1929:23: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1929 |   uint32_t *vectors = (uint32_t *)SCB->VTOR;
+      |                       ^
+In file included from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Core/Inc/main.h:31:
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h: In function 'LL_RCC_PLLI2S_ConfigDomain_I2S':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h:5666:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 5666 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&RCC->PLLCFGR) + (Source & 0x80U)));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h:5666:25: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 5666 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&RCC->PLLCFGR) + (Source & 0x80U)));
+      |                         ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_EnableStream':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:496:46: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  496 |   SET_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_EN);
+      |                                              ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:33: note: in definition of macro 'SET_BIT'
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:496:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  496 |   SET_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_EN);
+      |            ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:33: note: in definition of macro 'SET_BIT'
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_DisableStream':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:516:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  516 |   CLEAR_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_EN);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:213:33: note: in definition of macro 'CLEAR_BIT'
+  213 | #define CLEAR_BIT(REG, BIT)   ((REG) &= ~(BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:516:14: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  516 |   CLEAR_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_EN);
+      |              ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:213:33: note: in definition of macro 'CLEAR_BIT'
+  213 | #define CLEAR_BIT(REG, BIT)   ((REG) &= ~(BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_IsEnabledStream':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:536:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  536 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_EN) == (DMA_SxCR_EN));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:536:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  536 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_EN) == (DMA_SxCR_EN));
+      |                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_ConfigTransfer':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:571:49: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  571 |   MODIFY_REG(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR,
+      |                                                 ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:571:3: note: in expansion of macro 'MODIFY_REG'
+  571 |   MODIFY_REG(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR,
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:571:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  571 |   MODIFY_REG(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR,
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:571:3: note: in expansion of macro 'MODIFY_REG'
+  571 |   MODIFY_REG(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR,
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:571:49: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  571 |   MODIFY_REG(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR,
+      |                                                 ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:571:3: note: in expansion of macro 'MODIFY_REG'
+  571 |   MODIFY_REG(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR,
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:571:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  571 |   MODIFY_REG(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR,
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:571:3: note: in expansion of macro 'MODIFY_REG'
+  571 |   MODIFY_REG(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR,
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_SetDataTransferDirection':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:597:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  597 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_DIR, Direction);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:597:3: note: in expansion of macro 'MODIFY_REG'
+  597 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_DIR, Direction);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:597:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  597 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_DIR, Direction);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:597:3: note: in expansion of macro 'MODIFY_REG'
+  597 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_DIR, Direction);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:597:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  597 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_DIR, Direction);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:597:3: note: in expansion of macro 'MODIFY_REG'
+  597 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_DIR, Direction);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:597:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  597 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_DIR, Direction);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:597:3: note: in expansion of macro 'MODIFY_REG'
+  597 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_DIR, Direction);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_GetDataTransferDirection':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:620:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  620 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_DIR));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:620:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  620 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_DIR));
+      |                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_SetMode':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:645:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  645 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CIRC | DMA_SxCR_PFCTRL, Mode);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:645:3: note: in expansion of macro 'MODIFY_REG'
+  645 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CIRC | DMA_SxCR_PFCTRL, Mode);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:645:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  645 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CIRC | DMA_SxCR_PFCTRL, Mode);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:645:3: note: in expansion of macro 'MODIFY_REG'
+  645 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CIRC | DMA_SxCR_PFCTRL, Mode);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:645:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  645 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CIRC | DMA_SxCR_PFCTRL, Mode);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:645:3: note: in expansion of macro 'MODIFY_REG'
+  645 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CIRC | DMA_SxCR_PFCTRL, Mode);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:645:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  645 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CIRC | DMA_SxCR_PFCTRL, Mode);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:645:3: note: in expansion of macro 'MODIFY_REG'
+  645 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CIRC | DMA_SxCR_PFCTRL, Mode);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_GetMode':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:669:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  669 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CIRC | DMA_SxCR_PFCTRL));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:669:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  669 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CIRC | DMA_SxCR_PFCTRL));
+      |                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_SetPeriphIncMode':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:692:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  692 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PINC, IncrementMode);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:692:3: note: in expansion of macro 'MODIFY_REG'
+  692 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PINC, IncrementMode);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:692:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  692 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PINC, IncrementMode);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:692:3: note: in expansion of macro 'MODIFY_REG'
+  692 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PINC, IncrementMode);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:692:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  692 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PINC, IncrementMode);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:692:3: note: in expansion of macro 'MODIFY_REG'
+  692 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PINC, IncrementMode);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:692:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  692 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PINC, IncrementMode);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:692:3: note: in expansion of macro 'MODIFY_REG'
+  692 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PINC, IncrementMode);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_GetPeriphIncMode':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:714:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  714 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PINC));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:714:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  714 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PINC));
+      |                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_SetMemoryIncMode':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:737:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  737 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MINC, IncrementMode);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:737:3: note: in expansion of macro 'MODIFY_REG'
+  737 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MINC, IncrementMode);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:737:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  737 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MINC, IncrementMode);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:737:3: note: in expansion of macro 'MODIFY_REG'
+  737 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MINC, IncrementMode);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:737:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  737 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MINC, IncrementMode);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:737:3: note: in expansion of macro 'MODIFY_REG'
+  737 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MINC, IncrementMode);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:737:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  737 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MINC, IncrementMode);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:737:3: note: in expansion of macro 'MODIFY_REG'
+  737 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MINC, IncrementMode);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_GetMemoryIncMode':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:759:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  759 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MINC));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:759:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  759 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MINC));
+      |                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_SetPeriphSize':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:783:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  783 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PSIZE, Size);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:783:3: note: in expansion of macro 'MODIFY_REG'
+  783 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PSIZE, Size);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:783:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  783 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PSIZE, Size);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:783:3: note: in expansion of macro 'MODIFY_REG'
+  783 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PSIZE, Size);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:783:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  783 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PSIZE, Size);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:783:3: note: in expansion of macro 'MODIFY_REG'
+  783 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PSIZE, Size);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:783:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  783 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PSIZE, Size);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:783:3: note: in expansion of macro 'MODIFY_REG'
+  783 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PSIZE, Size);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_GetPeriphSize':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:806:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  806 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PSIZE));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:806:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  806 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PSIZE));
+      |                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_SetMemorySize':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:830:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  830 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MSIZE, Size);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:830:3: note: in expansion of macro 'MODIFY_REG'
+  830 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MSIZE, Size);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:830:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  830 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MSIZE, Size);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:830:3: note: in expansion of macro 'MODIFY_REG'
+  830 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MSIZE, Size);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:830:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  830 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MSIZE, Size);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:830:3: note: in expansion of macro 'MODIFY_REG'
+  830 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MSIZE, Size);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:830:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  830 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MSIZE, Size);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:830:3: note: in expansion of macro 'MODIFY_REG'
+  830 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MSIZE, Size);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_GetMemorySize':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:853:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  853 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MSIZE));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:853:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  853 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MSIZE));
+      |                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_SetIncOffsetSize':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:876:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  876 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PINCOS, OffsetSize);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:876:3: note: in expansion of macro 'MODIFY_REG'
+  876 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PINCOS, OffsetSize);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:876:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  876 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PINCOS, OffsetSize);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:876:3: note: in expansion of macro 'MODIFY_REG'
+  876 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PINCOS, OffsetSize);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:876:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  876 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PINCOS, OffsetSize);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:876:3: note: in expansion of macro 'MODIFY_REG'
+  876 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PINCOS, OffsetSize);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:876:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  876 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PINCOS, OffsetSize);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:876:3: note: in expansion of macro 'MODIFY_REG'
+  876 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PINCOS, OffsetSize);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_GetIncOffsetSize':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:898:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  898 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PINCOS));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:898:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  898 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PINCOS));
+      |                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_SetStreamPriorityLevel':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:923:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  923 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PL, Priority);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:923:3: note: in expansion of macro 'MODIFY_REG'
+  923 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PL, Priority);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:923:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  923 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PL, Priority);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:923:3: note: in expansion of macro 'MODIFY_REG'
+  923 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PL, Priority);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:923:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  923 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PL, Priority);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:923:3: note: in expansion of macro 'MODIFY_REG'
+  923 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PL, Priority);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:923:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  923 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PL, Priority);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:923:3: note: in expansion of macro 'MODIFY_REG'
+  923 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PL, Priority);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_GetStreamPriorityLevel':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:947:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  947 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PL));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:947:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  947 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PL));
+      |                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_SetDataLength':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:970:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  970 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->NDTR, DMA_SxNDT, NbData);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:970:3: note: in expansion of macro 'MODIFY_REG'
+  970 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->NDTR, DMA_SxNDT, NbData);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:970:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  970 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->NDTR, DMA_SxNDT, NbData);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:970:3: note: in expansion of macro 'MODIFY_REG'
+  970 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->NDTR, DMA_SxNDT, NbData);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:970:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  970 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->NDTR, DMA_SxNDT, NbData);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:970:3: note: in expansion of macro 'MODIFY_REG'
+  970 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->NDTR, DMA_SxNDT, NbData);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:970:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  970 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->NDTR, DMA_SxNDT, NbData);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:970:3: note: in expansion of macro 'MODIFY_REG'
+  970 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->NDTR, DMA_SxNDT, NbData);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_GetDataLength':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:992:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+  992 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->NDTR, DMA_SxNDT));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:992:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+  992 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->NDTR, DMA_SxNDT));
+      |                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_SetChannelSelection':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1021:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1021 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CHSEL, Channel);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1021:3: note: in expansion of macro 'MODIFY_REG'
+ 1021 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CHSEL, Channel);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1021:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1021 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CHSEL, Channel);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1021:3: note: in expansion of macro 'MODIFY_REG'
+ 1021 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CHSEL, Channel);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1021:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1021 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CHSEL, Channel);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1021:3: note: in expansion of macro 'MODIFY_REG'
+ 1021 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CHSEL, Channel);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1021:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1021 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CHSEL, Channel);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1021:3: note: in expansion of macro 'MODIFY_REG'
+ 1021 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CHSEL, Channel);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_GetChannelSelection':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1049:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1049 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CHSEL));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1049:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1049 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CHSEL));
+      |                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_SetMemoryBurstxfer':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1074:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1074 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MBURST, Mburst);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1074:3: note: in expansion of macro 'MODIFY_REG'
+ 1074 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MBURST, Mburst);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1074:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1074 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MBURST, Mburst);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1074:3: note: in expansion of macro 'MODIFY_REG'
+ 1074 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MBURST, Mburst);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1074:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1074 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MBURST, Mburst);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1074:3: note: in expansion of macro 'MODIFY_REG'
+ 1074 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MBURST, Mburst);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1074:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1074 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MBURST, Mburst);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1074:3: note: in expansion of macro 'MODIFY_REG'
+ 1074 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MBURST, Mburst);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_GetMemoryBurstxfer':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1098:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1098 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MBURST));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1098:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1098 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_MBURST));
+      |                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_SetPeriphBurstxfer':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1123:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1123 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PBURST, Pburst);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1123:3: note: in expansion of macro 'MODIFY_REG'
+ 1123 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PBURST, Pburst);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1123:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1123 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PBURST, Pburst);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1123:3: note: in expansion of macro 'MODIFY_REG'
+ 1123 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PBURST, Pburst);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1123:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1123 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PBURST, Pburst);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1123:3: note: in expansion of macro 'MODIFY_REG'
+ 1123 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PBURST, Pburst);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1123:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1123 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PBURST, Pburst);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1123:3: note: in expansion of macro 'MODIFY_REG'
+ 1123 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PBURST, Pburst);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_GetPeriphBurstxfer':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1147:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1147 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PBURST));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1147:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1147 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_PBURST));
+      |                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_SetCurrentTargetMem':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1170:49: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1170 |    MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CT, CurrentMemory);
+      |                                                 ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1170:4: note: in expansion of macro 'MODIFY_REG'
+ 1170 |    MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CT, CurrentMemory);
+      |    ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1170:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1170 |    MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CT, CurrentMemory);
+      |                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1170:4: note: in expansion of macro 'MODIFY_REG'
+ 1170 |    MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CT, CurrentMemory);
+      |    ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1170:49: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1170 |    MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CT, CurrentMemory);
+      |                                                 ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1170:4: note: in expansion of macro 'MODIFY_REG'
+ 1170 |    MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CT, CurrentMemory);
+      |    ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1170:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1170 |    MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CT, CurrentMemory);
+      |                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1170:4: note: in expansion of macro 'MODIFY_REG'
+ 1170 |    MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CT, CurrentMemory);
+      |    ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_GetCurrentTargetMem':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1192:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1192 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CT));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1192:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1192 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_CT));
+      |                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_EnableDoubleBufferMode':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1212:46: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1212 |   SET_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_DBM);
+      |                                              ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:33: note: in definition of macro 'SET_BIT'
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1212:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1212 |   SET_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_DBM);
+      |            ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:33: note: in definition of macro 'SET_BIT'
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_DisableDoubleBufferMode':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1232:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1232 |   CLEAR_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_DBM);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:213:33: note: in definition of macro 'CLEAR_BIT'
+  213 | #define CLEAR_BIT(REG, BIT)   ((REG) &= ~(BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1232:14: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1232 |   CLEAR_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_DBM);
+      |              ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:213:33: note: in definition of macro 'CLEAR_BIT'
+  213 | #define CLEAR_BIT(REG, BIT)   ((REG) &= ~(BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_GetFIFOStatus':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1258:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1258 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FS));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1258:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1258 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FS));
+      |                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_DisableFifoMode':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1278:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1278 |   CLEAR_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_DMDIS);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:213:33: note: in definition of macro 'CLEAR_BIT'
+  213 | #define CLEAR_BIT(REG, BIT)   ((REG) &= ~(BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1278:14: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1278 |   CLEAR_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_DMDIS);
+      |              ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:213:33: note: in definition of macro 'CLEAR_BIT'
+  213 | #define CLEAR_BIT(REG, BIT)   ((REG) &= ~(BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_EnableFifoMode':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1298:46: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1298 |   SET_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_DMDIS);
+      |                                              ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:33: note: in definition of macro 'SET_BIT'
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1298:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1298 |   SET_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_DMDIS);
+      |            ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:33: note: in definition of macro 'SET_BIT'
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_SetFIFOThreshold':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1323:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1323 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FTH, Threshold);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1323:3: note: in expansion of macro 'MODIFY_REG'
+ 1323 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FTH, Threshold);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1323:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1323 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FTH, Threshold);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1323:3: note: in expansion of macro 'MODIFY_REG'
+ 1323 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FTH, Threshold);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1323:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1323 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FTH, Threshold);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1323:3: note: in expansion of macro 'MODIFY_REG'
+ 1323 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FTH, Threshold);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1323:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1323 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FTH, Threshold);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1323:3: note: in expansion of macro 'MODIFY_REG'
+ 1323 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FTH, Threshold);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_GetFIFOThreshold':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1347:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1347 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FTH));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1347:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1347 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FTH));
+      |                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_ConfigFifo':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1376:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1376 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FTH|DMA_SxFCR_DMDIS, FifoMode|FifoThreshold);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1376:3: note: in expansion of macro 'MODIFY_REG'
+ 1376 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FTH|DMA_SxFCR_DMDIS, FifoMode|FifoThreshold);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1376:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1376 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FTH|DMA_SxFCR_DMDIS, FifoMode|FifoThreshold);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1376:3: note: in expansion of macro 'MODIFY_REG'
+ 1376 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FTH|DMA_SxFCR_DMDIS, FifoMode|FifoThreshold);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1376:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1376 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FTH|DMA_SxFCR_DMDIS, FifoMode|FifoThreshold);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1376:3: note: in expansion of macro 'MODIFY_REG'
+ 1376 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FTH|DMA_SxFCR_DMDIS, FifoMode|FifoThreshold);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1376:15: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1376 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FTH|DMA_SxFCR_DMDIS, FifoMode|FifoThreshold);
+      |               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:41: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                         ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:223:66: note: in expansion of macro 'READ_REG'
+  223 | #define MODIFY_REG(REG, CLEARMASK, SETMASK)  WRITE_REG((REG), (((READ_REG(REG)) & (~(CLEARMASK))) | (SETMASK)))
+      |                                                                  ^~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1376:3: note: in expansion of macro 'MODIFY_REG'
+ 1376 |   MODIFY_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FTH|DMA_SxFCR_DMDIS, FifoMode|FifoThreshold);
+      |   ^~~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_ConfigAddresses':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1407:49: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1407 |     WRITE_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->M0AR, SrcAddress);
+      |                                                 ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1407:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1407 |     WRITE_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->M0AR, SrcAddress);
+      |                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1408:49: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1408 |     WRITE_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->PAR, DstAddress);
+      |                                                 ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1408:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1408 |     WRITE_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->PAR, DstAddress);
+      |                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1413:49: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1413 |     WRITE_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->PAR, SrcAddress);
+      |                                                 ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1413:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1413 |     WRITE_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->PAR, SrcAddress);
+      |                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1414:49: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1414 |     WRITE_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->M0AR, DstAddress);
+      |                                                 ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1414:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1414 |     WRITE_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->M0AR, DstAddress);
+      |                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_SetMemoryAddress':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1438:47: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1438 |   WRITE_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->M0AR, MemoryAddress);
+      |                                               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1438:14: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1438 |   WRITE_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->M0AR, MemoryAddress);
+      |              ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_SetPeriphAddress':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1461:47: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1461 |   WRITE_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->PAR, PeriphAddress);
+      |                                               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1461:14: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1461 |   WRITE_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->PAR, PeriphAddress);
+      |              ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_GetMemoryAddress':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1482:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1482 |   return (READ_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->M0AR));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:221:33: note: in definition of macro 'READ_REG'
+  221 | #define READ_REG(REG)         ((REG))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1482:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1482 |   return (READ_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->M0AR));
+      |                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:221:33: note: in definition of macro 'READ_REG'
+  221 | #define READ_REG(REG)         ((REG))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_GetPeriphAddress':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1503:55: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1503 |   return (READ_REG(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->PAR));
+      |                                                       ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:221:33: note: in definition of macro 'READ_REG'
+  221 | #define READ_REG(REG)         ((REG))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1503:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1503 |   return (READ_REG(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->PAR));
+      |                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:221:33: note: in definition of macro 'READ_REG'
+  221 | #define READ_REG(REG)         ((REG))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_SetM2MSrcAddress':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1526:47: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1526 |   WRITE_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->PAR, MemoryAddress);
+      |                                               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1526:14: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1526 |   WRITE_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->PAR, MemoryAddress);
+      |              ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_SetM2MDstAddress':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1549:49: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1549 |     WRITE_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->M0AR, MemoryAddress);
+      |                                                 ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1549:16: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1549 |     WRITE_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->M0AR, MemoryAddress);
+      |                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_GetM2MSrcAddress':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1570:56: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1570 |    return (READ_REG(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->PAR));
+      |                                                        ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:221:33: note: in definition of macro 'READ_REG'
+  221 | #define READ_REG(REG)         ((REG))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1570:22: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1570 |    return (READ_REG(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->PAR));
+      |                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:221:33: note: in definition of macro 'READ_REG'
+  221 | #define READ_REG(REG)         ((REG))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_GetM2MDstAddress':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1591:53: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1591 |  return (READ_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->M0AR));
+      |                                                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:221:33: note: in definition of macro 'READ_REG'
+  221 | #define READ_REG(REG)         ((REG))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1591:20: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1591 |  return (READ_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->M0AR));
+      |                    ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:221:33: note: in definition of macro 'READ_REG'
+  221 | #define READ_REG(REG)         ((REG))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_SetMemory1Address':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1612:47: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1612 |   WRITE_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->M1AR, Address);
+      |                                               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1612:14: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1612 |   WRITE_REG(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->M1AR, Address);
+      |              ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:33: note: in definition of macro 'WRITE_REG'
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                 ^~~
+In file included from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Core/Inc/main.h:38:
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_GetMemory1Address':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1632:45: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1632 |   return (((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->M1AR);
+      |                                             ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:1632:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1632 |   return (((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->M1AR);
+      |            ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_EnableIT_HT':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2548:46: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2548 |   SET_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_HTIE);
+      |                                              ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:33: note: in definition of macro 'SET_BIT'
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2548:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2548 |   SET_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_HTIE);
+      |            ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:33: note: in definition of macro 'SET_BIT'
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_EnableIT_TE':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2568:46: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2568 |   SET_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_TEIE);
+      |                                              ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:33: note: in definition of macro 'SET_BIT'
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2568:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2568 |   SET_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_TEIE);
+      |            ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:33: note: in definition of macro 'SET_BIT'
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_EnableIT_TC':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2588:46: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2588 |   SET_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_TCIE);
+      |                                              ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:33: note: in definition of macro 'SET_BIT'
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2588:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2588 |   SET_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_TCIE);
+      |            ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:33: note: in definition of macro 'SET_BIT'
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_EnableIT_DME':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2608:46: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2608 |   SET_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_DMEIE);
+      |                                              ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:33: note: in definition of macro 'SET_BIT'
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2608:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2608 |   SET_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_DMEIE);
+      |            ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:33: note: in definition of macro 'SET_BIT'
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_EnableIT_FE':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2628:46: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2628 |   SET_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FEIE);
+      |                                              ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:33: note: in definition of macro 'SET_BIT'
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2628:12: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2628 |   SET_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FEIE);
+      |            ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:33: note: in definition of macro 'SET_BIT'
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_DisableIT_HT':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2648:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2648 |   CLEAR_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_HTIE);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:213:33: note: in definition of macro 'CLEAR_BIT'
+  213 | #define CLEAR_BIT(REG, BIT)   ((REG) &= ~(BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2648:14: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2648 |   CLEAR_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_HTIE);
+      |              ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:213:33: note: in definition of macro 'CLEAR_BIT'
+  213 | #define CLEAR_BIT(REG, BIT)   ((REG) &= ~(BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_DisableIT_TE':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2668:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2668 |   CLEAR_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_TEIE);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:213:33: note: in definition of macro 'CLEAR_BIT'
+  213 | #define CLEAR_BIT(REG, BIT)   ((REG) &= ~(BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2668:14: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2668 |   CLEAR_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_TEIE);
+      |              ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:213:33: note: in definition of macro 'CLEAR_BIT'
+  213 | #define CLEAR_BIT(REG, BIT)   ((REG) &= ~(BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_DisableIT_TC':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2688:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2688 |   CLEAR_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_TCIE);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:213:33: note: in definition of macro 'CLEAR_BIT'
+  213 | #define CLEAR_BIT(REG, BIT)   ((REG) &= ~(BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2688:14: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2688 |   CLEAR_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_TCIE);
+      |              ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:213:33: note: in definition of macro 'CLEAR_BIT'
+  213 | #define CLEAR_BIT(REG, BIT)   ((REG) &= ~(BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_DisableIT_DME':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2708:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2708 |   CLEAR_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_DMEIE);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:213:33: note: in definition of macro 'CLEAR_BIT'
+  213 | #define CLEAR_BIT(REG, BIT)   ((REG) &= ~(BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2708:14: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2708 |   CLEAR_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_DMEIE);
+      |              ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:213:33: note: in definition of macro 'CLEAR_BIT'
+  213 | #define CLEAR_BIT(REG, BIT)   ((REG) &= ~(BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_DisableIT_FE':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2728:48: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2728 |   CLEAR_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FEIE);
+      |                                                ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:213:33: note: in definition of macro 'CLEAR_BIT'
+  213 | #define CLEAR_BIT(REG, BIT)   ((REG) &= ~(BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2728:14: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2728 |   CLEAR_BIT(((DMA_Stream_TypeDef *)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FEIE);
+      |              ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:213:33: note: in definition of macro 'CLEAR_BIT'
+  213 | #define CLEAR_BIT(REG, BIT)   ((REG) &= ~(BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_IsEnabledIT_HT':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2748:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2748 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_HTIE) == DMA_SxCR_HTIE);
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2748:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2748 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_HTIE) == DMA_SxCR_HTIE);
+      |                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_IsEnabledIT_TE':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2768:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2768 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_TEIE) == DMA_SxCR_TEIE);
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2768:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2768 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_TEIE) == DMA_SxCR_TEIE);
+      |                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_IsEnabledIT_TC':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2788:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2788 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_TCIE) == DMA_SxCR_TCIE);
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2788:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2788 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_TCIE) == DMA_SxCR_TCIE);
+      |                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_IsEnabledIT_DME':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2808:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2808 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_DMEIE) == DMA_SxCR_DMEIE);
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2808:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2808 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->CR, DMA_SxCR_DMEIE) == DMA_SxCR_DMEIE);
+      |                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h: In function 'LL_DMA_IsEnabledIT_FE':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2828:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2828 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FEIE) == DMA_SxFCR_FEIE);
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h:2828:21: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2828 |   return (READ_BIT(((DMA_Stream_TypeDef*)((uint32_t)((uint32_t)DMAx + STREAM_OFFSET_TAB[Stream])))->FCR, DMA_SxFCR_FEIE) == DMA_SxFCR_FEIE);
+      |                     ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:215:33: note: in definition of macro 'READ_BIT'
+  215 | #define READ_BIT(REG, BIT)    ((REG) & (BIT))
+      |                                 ^~~
+In file included from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Core/Inc/main.h:39:
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_spi.h: In function 'LL_SPI_DMA_GetRegAddr':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_spi.h:1073:10: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1073 |   return (uint32_t) &(SPIx->DR);
+      |          ^
+In file included from /home/nihil/repos/stmp32/cmake/stm32cubemx/../../Core/Inc/main.h:40:
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_OC_ConfigOutput':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:1702:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1702 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:1702:25: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1702 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                         ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_OC_SetMode':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:1737:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1737 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:1737:25: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1737 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                         ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_OC_GetMode':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:1766:60: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1766 |   const __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                                                            ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:1766:31: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1766 |   const __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_OC_EnableFast':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:1906:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1906 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:1906:25: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1906 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                         ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_OC_DisableFast':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:1928:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1928 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:1928:25: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1928 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                         ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_OC_IsEnabledFast':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:1950:60: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1950 |   const __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                                                            ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:1950:31: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1950 |   const __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_OC_EnablePreload':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:1972:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1972 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:1972:25: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1972 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                         ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_OC_DisablePreload':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:1993:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 1993 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:1993:25: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 1993 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                         ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_OC_IsEnabledPreload':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2014:60: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2014 |   const __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                                                            ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2014:31: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2014 |   const __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_OC_EnableClear':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2039:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2039 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2039:25: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2039 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                         ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_OC_DisableClear':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2062:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2062 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2062:25: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2062 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                         ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_OC_IsEnabledClear':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2087:60: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2087 |   const __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                                                            ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2087:31: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2087 |   const __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_IC_Config':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2285:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2285 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2285:25: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2285 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                         ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_IC_SetActiveInput':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2314:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2314 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2314:25: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2314 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                         ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_IC_GetActiveInput':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2338:60: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2338 |   const __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                                                            ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2338:31: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2338 |   const __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_IC_SetPrescaler':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2364:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2364 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2364:25: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2364 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                         ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_IC_GetPrescaler':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2389:60: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2389 |   const __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                                                            ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2389:31: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2389 |   const __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_IC_SetFilter':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2427:54: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2427 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                                                      ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2427:25: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2427 |   __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                         ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_IC_GetFilter':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2464:60: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]
+ 2464 |   const __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                                                            ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:2464:31: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+ 2464 |   const __IO uint32_t *pReg = (__IO uint32_t *)((uint32_t)((uint32_t)(&TIMx->CCMR1) + OFFSET_TAB_CCMRx[iChannel]));
+      |                               ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_ClearFlag_UPDATE':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:40: warning: conversion from 'long unsigned int' to 'uint32_t' {aka 'unsigned int'} changes value from '18446744073709551614' to '4294967294' [-Woverflow]
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                        ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3187:3: note: in expansion of macro 'WRITE_REG'
+ 3187 |   WRITE_REG(TIMx->SR, ~(TIM_SR_UIF));
+      |   ^~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_ClearFlag_CC1':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:40: warning: conversion from 'long unsigned int' to 'uint32_t' {aka 'unsigned int'} changes value from '18446744073709551613' to '4294967293' [-Woverflow]
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                        ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3209:3: note: in expansion of macro 'WRITE_REG'
+ 3209 |   WRITE_REG(TIMx->SR, ~(TIM_SR_CC1IF));
+      |   ^~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_ClearFlag_CC2':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:40: warning: conversion from 'long unsigned int' to 'uint32_t' {aka 'unsigned int'} changes value from '18446744073709551611' to '4294967291' [-Woverflow]
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                        ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3231:3: note: in expansion of macro 'WRITE_REG'
+ 3231 |   WRITE_REG(TIMx->SR, ~(TIM_SR_CC2IF));
+      |   ^~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_ClearFlag_CC3':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:40: warning: conversion from 'long unsigned int' to 'uint32_t' {aka 'unsigned int'} changes value from '18446744073709551607' to '4294967287' [-Woverflow]
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                        ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3253:3: note: in expansion of macro 'WRITE_REG'
+ 3253 |   WRITE_REG(TIMx->SR, ~(TIM_SR_CC3IF));
+      |   ^~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_ClearFlag_CC4':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:40: warning: conversion from 'long unsigned int' to 'uint32_t' {aka 'unsigned int'} changes value from '18446744073709551599' to '4294967279' [-Woverflow]
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                        ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3275:3: note: in expansion of macro 'WRITE_REG'
+ 3275 |   WRITE_REG(TIMx->SR, ~(TIM_SR_CC4IF));
+      |   ^~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_ClearFlag_COM':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:40: warning: conversion from 'long unsigned int' to 'uint32_t' {aka 'unsigned int'} changes value from '18446744073709551583' to '4294967263' [-Woverflow]
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                        ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3297:3: note: in expansion of macro 'WRITE_REG'
+ 3297 |   WRITE_REG(TIMx->SR, ~(TIM_SR_COMIF));
+      |   ^~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_ClearFlag_TRIG':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:40: warning: conversion from 'long unsigned int' to 'uint32_t' {aka 'unsigned int'} changes value from '18446744073709551551' to '4294967231' [-Woverflow]
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                        ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3319:3: note: in expansion of macro 'WRITE_REG'
+ 3319 |   WRITE_REG(TIMx->SR, ~(TIM_SR_TIF));
+      |   ^~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_ClearFlag_BRK':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:40: warning: conversion from 'long unsigned int' to 'uint32_t' {aka 'unsigned int'} changes value from '18446744073709551487' to '4294967167' [-Woverflow]
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                        ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3341:3: note: in expansion of macro 'WRITE_REG'
+ 3341 |   WRITE_REG(TIMx->SR, ~(TIM_SR_BIF));
+      |   ^~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_ClearFlag_CC1OVR':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:40: warning: conversion from 'long unsigned int' to 'uint32_t' {aka 'unsigned int'} changes value from '18446744073709551103' to '4294966783' [-Woverflow]
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                        ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3363:3: note: in expansion of macro 'WRITE_REG'
+ 3363 |   WRITE_REG(TIMx->SR, ~(TIM_SR_CC1OF));
+      |   ^~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_ClearFlag_CC2OVR':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:40: warning: conversion from 'long unsigned int' to 'uint32_t' {aka 'unsigned int'} changes value from '18446744073709550591' to '4294966271' [-Woverflow]
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                        ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3386:3: note: in expansion of macro 'WRITE_REG'
+ 3386 |   WRITE_REG(TIMx->SR, ~(TIM_SR_CC2OF));
+      |   ^~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_ClearFlag_CC3OVR':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:40: warning: conversion from 'long unsigned int' to 'uint32_t' {aka 'unsigned int'} changes value from '18446744073709549567' to '4294965247' [-Woverflow]
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                        ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3409:3: note: in expansion of macro 'WRITE_REG'
+ 3409 |   WRITE_REG(TIMx->SR, ~(TIM_SR_CC3OF));
+      |   ^~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h: In function 'LL_TIM_ClearFlag_CC4OVR':
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:219:40: warning: conversion from 'long unsigned int' to 'uint32_t' {aka 'unsigned int'} changes value from '18446744073709547519' to '4294963199' [-Woverflow]
+  219 | #define WRITE_REG(REG, VAL)   ((REG) = (VAL))
+      |                                        ^
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_tim.h:3432:3: note: in expansion of macro 'WRITE_REG'
+ 3432 |   WRITE_REG(TIMx->SR, ~(TIM_SR_CC4OF));
+      |   ^~~~~~~~~
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/cmsis_gcc.h: Assembler messages:
+/home/nihil/repos/stmp32/cmake/stm32cubemx/../../Drivers/CMSIS/Include/cmsis_gcc.h:962: Error: no such instruction: `cpsid i'
+ninja: build stopped: subcommand failed.
