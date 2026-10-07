@@ -315,3 +315,25 @@ void Display_DrawString(uint16_t x, uint16_t y, const char *str, uint16_t fg_col
     while (dma_busy) {}
     SPI_End();
 }
+
+void Display_DrawBitmap(uint16_t x, uint16_t y, uint16_t wid, uint16_t hei, const uint8_t *bitmap) {
+    if (x + wid > ST7789V_DISP_WID)
+        wid = ST7789V_DISP_WID - x;
+    if (y + hei > ST7789V_DISP_HEI)
+        hei = ST7789V_DISP_HEI - y;
+
+    Display_SetWindow(x, y, x + wid - 1, y + hei - 1);
+    SPI_BeginData();
+
+    /* send line by line since its limited by NDTR being 16-bit and a big image would overflow it */
+    for (uint16_t row = 0; row < hei; ++row) {
+        /* TODO: add actual scheduler logic here */
+        while (dma_busy) {} /* wait til it ends sending previous line */
+
+        DMA_Transmit(&bitmap[row * wid * 2], wid * 2);
+    }
+
+    /* TODO: add actual scheduler logic here */
+    while (dma_busy) {}
+    SPI_End();
+}

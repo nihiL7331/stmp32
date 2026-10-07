@@ -150,3 +150,4 @@ void Display_DrawChar(uint16_t x, uint16_t y, char c, uint16_t fg_color, uint16_
                       uint8_t scale);
 void Display_DrawString(uint16_t x, uint16_t y, const char *str, uint16_t fg_color,
                         uint16_t bg_color, uint8_t scale);
+void Display_DrawBitmap(uint16_t x, uint16_t y, uint16_t wid, uint16_t hei, const uint8_t *bitmap);
