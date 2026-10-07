@@ -4,6 +4,7 @@
 #include "stm32f4xx_ll_gpio.h"
 #include "stm32f4xx_ll_spi.h"
 #include "stm32f4xx_ll_utils.h"
+#include "stm32f4xx_ll_dma.h"
 #include <stdint.h>
 
 /* SPI1 */
@@ -22,6 +23,11 @@
 #define DISP_PORT_B_CLK_EN() LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOB)
 #define DISP_RST_PIN         LL_GPIO_PIN_0
 #define DISP_DC_PIN          LL_GPIO_PIN_1
+
+/* DMA config */
+#define DISP_DMA         DMA2
+#define DISP_DMA_STREAM  LL_DMA_STREAM_3
+#define DISP_DMA_CHANNEL LL_DMA_CHANNEL_3
 
 /* ST7789V hardware commands */
 #define ST7789V_CMD_NOP       0x00

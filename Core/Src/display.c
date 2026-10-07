@@ -4,6 +4,8 @@
 
 /* ----------------- private helpers ----------------- */
 
+static volatile uint8_t dma_busy = 0; /* is DMA currently pushing data */
+
 static inline void SPI_WaitAndSend(uint8_t byte) {
     while (!LL_SPI_IsActiveFlag_TXE(DISP_SPI)) {} /* wait til transmit buffer empty */
     LL_SPI_TransmitData8(DISP_SPI, byte);         /* push byte to data register (DR) */
@@ -25,9 +27,52 @@ static inline void SPI_BeginData(void) {
     LL_GPIO_ResetOutputPin(DISP_PORT_A, DISP_CS_PIN); /* CS low, activate screen */
 }
 
+static inline void SPI_WaitDMA(void) {
+    while (!LL_DMA_IsActiveFlag_TC3(DISP_DMA)) {} /* wait til DMA finishes */
+    while (LL_SPI_IsActiveFlag_BSY(DISP_SPI)) {}  /* wait til bytes finished sending */
+    LL_SPI_DisableDMAReq_TX(DISP_SPI);
+}
+
 static inline void SPI_End(void) {
     while (LL_SPI_IsActiveFlag_BSY(DISP_SPI)) {}    /* wait til bytes finished sending */
     LL_GPIO_SetOutputPin(DISP_PORT_A, DISP_CS_PIN); /* CS high, unlock bus */
+}
+
+static inline void DMA_Init(void) {
+    LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_DMA2); /* enable DMA2 clock */
+
+    LL_DMA_InitTypeDef DMA_InitStruct = {0};
+    DMA_InitStruct.Channel            = DISP_DMA_CHANNEL;
+    DMA_InitStruct.Direction          = LL_DMA_DIRECTION_MEMORY_TO_PERIPH;
+    DMA_InitStruct.Mode               = LL_DMA_MODE_NORMAL;
+
+    DMA_InitStruct.PeriphOrM2MSrcAddress = (uint32_t)&(DISP_SPI->DR); /* dest is DR from SPI */
+    DMA_InitStruct.PeriphOrM2MSrcIncMode = LL_DMA_PERIPH_NOINCREMENT; /* SPI stays in place */
+
+    DMA_InitStruct.MemoryOrM2MDstIncMode  = LL_DMA_MEMORY_INCREMENT; /* src is RAM */
+    DMA_InitStruct.MemoryOrM2MDstDataSize = LL_DMA_PDATAALIGN_BYTE;
+
+    DMA_InitStruct.Priority = LL_DMA_PRIORITY_VERYHIGH; /* very high prio to not starve SPI */
+
+    LL_DMA_Init(DISP_DMA, DISP_DMA_STREAM, &DMA_InitStruct);
+
+    LL_DMA_EnableIT_TC(DISP_DMA, DISP_DMA_STREAM); /* enable interrupt on TC */
+    NVIC_SetPriority(DMA2_Stream3_IRQn, 0 /* highest priority */);
+    NVIC_EnableIRQ(DMA2_Stream3_IRQn);
+}
+
+static inline void DMA_Transmit(const uint8_t *buf, uint16_t len) {
+    dma_busy = 1;
+
+    LL_DMA_DisableStream(DISP_DMA, DISP_DMA_STREAM); /* disable stream before reconfiguring */
+    while (LL_DMA_IsEnabledStream(DISP_DMA, DISP_DMA_STREAM)) {}
+
+    LL_DMA_ClearFlag_TC3(DISP_DMA); /* clear TC for stream 3 used here */
+    LL_DMA_SetMemoryAddress(DISP_DMA, DISP_DMA_STREAM, (uint32_t)buf); /* set up transmitted data */
+    LL_DMA_SetDataLength(DISP_DMA, DISP_DMA_STREAM, len);
+
+    LL_DMA_EnableStream(DISP_DMA, DISP_DMA_STREAM);
+    LL_SPI_EnableDMAReq_TX(DISP_SPI);
 }
 
 /* ----------------- public implementation ----------------- */
@@ -77,6 +122,8 @@ void Display_InitHardware(void) {
     LL_SPI_Init(DISP_SPI, &SPI_InitStruct);
 
     LL_SPI_Enable(DISP_SPI);
+
+    DMA_Init();
 }
 
 void Display_SendCommand(uint8_t cmd) {
@@ -156,15 +203,28 @@ void Display_FillRect(uint16_t x, uint16_t y, uint16_t wid, uint16_t hei, uint16
     if (y + hei > ST7789V_DISP_HEI)
         hei = ST7789V_DISP_HEI - y;
 
-    uint32_t px_cnt = wid * hei;
+    static uint8_t line_buf[2][ST7789V_DISP_WID * 2]; /* 16bpp double line buf */
+    uint8_t        work_idx = 0;                      /* to buf in which CPU currently writes */
 
-    /* instead of Display_SendData on every px, handle it directly manually here */
+    uint8_t color_msb = color >> 8, color_lsb = color & 0xFF;
+
     Display_SetWindow(x, y, x + wid - 1, y + hei - 1); /* open window of rect size */
     SPI_BeginData();
 
-    for (uint32_t i = 0; i < px_cnt; ++i)
-        SPI_Send16(color);
+    for (uint16_t row = 0; row < hei; ++row) {
+        for (uint16_t i = 0; i < wid * 2; i += 2)
+            line_buf[work_idx][i] = color_msb, line_buf[work_idx][i + 1] = color_lsb;
 
+        /* TODO: add actual scheduler logic here */
+        while (dma_busy) {} /* wait for bus free */
+
+        DMA_Transmit(line_buf[work_idx], wid * 2);
+
+        work_idx = !work_idx; /* swap currently worked on buffer */
+    }
+
+    /* TODO: add actual scheduler logic here */
+    while (dma_busy) {}
     SPI_End();
 }
 
@@ -178,36 +238,11 @@ void Display_DrawPixel(uint16_t x, uint16_t y, uint16_t color) {
 
 void Display_DrawChar(uint16_t x, uint16_t y, char c, uint16_t fg_color, uint16_t bg_color,
                       uint8_t scale) {
-    STMP32_ASSERT(scale != 0);
     if (c < 32 || c > 126)
         return; /* draw only ASCII chars */
 
-    uint8_t  font_idx = c - ' ';                          /* get bitmap table index */
-    uint16_t char_wid = 8 * scale, char_hei = 16 * scale; /* def size is 8x16px, mult by scale */
-
-    if (x + char_wid > ST7789V_DISP_WID || y + char_hei > ST7789V_DISP_HEI)
-        return;
-
-    /* instead of Display_SendData on every px, handle it directly manually here */
-    Display_SetWindow(x, y, x + char_wid - 1, y + char_hei - 1); /* bind to char-sized window */
-    SPI_BeginData();
-
-    for (uint16_t row = 0; row < 16; ++row) {
-        uint8_t row_data = terminus_8x16[font_idx][row];
-
-        for (uint8_t scale_y = 0; scale_y < scale; ++scale_y)
-            for (uint8_t col = 0; col < 8; ++col) {
-                uint8_t is_px = row_data & (0x80 >> col);
-
-                for (uint8_t scale_x = 0; scale_x < scale; ++scale_x)
-                    if (is_px)
-                        SPI_Send16(fg_color);
-                    else
-                        SPI_Send16(bg_color);
-            }
-    }
-
-    SPI_End();
+    char tmp_str[2] = {c, '\0'};
+    Display_DrawString(x, y, tmp_str, fg_color, bg_color, scale);
 }
 
 void Display_DrawString(uint16_t x, uint16_t y, const char *str, uint16_t fg_color,
@@ -228,7 +263,12 @@ void Display_DrawString(uint16_t x, uint16_t y, const char *str, uint16_t fg_col
     if (y + total_hei > ST7789V_DISP_HEI)
         total_hei = ST7789V_DISP_HEI - y;
 
-    /* instead of Display_SendData on every px, handle it directly manually here */
+    uint8_t fg_color_msb = fg_color >> 8, fg_color_lsb = fg_color & 0xFF;
+    uint8_t bg_color_msb = bg_color >> 8, bg_color_lsb = bg_color & 0xFF;
+
+    static uint8_t line_buf[2][ST7789V_DISP_WID * 2]; /* 16bpp double line buf */
+    uint8_t        work_idx = 0;                      /* to buf in which CPU currently writes */
+
     Display_SetWindow(x, y, x + total_wid - 1, y + total_hei - 1);
     SPI_BeginData();
 
@@ -237,7 +277,8 @@ void Display_DrawString(uint16_t x, uint16_t y, const char *str, uint16_t fg_col
             if ((row * scale + scale_y) >= total_hei)
                 break;
 
-            uint16_t cur_x = 0;
+            uint16_t cur_x   = 0;
+            uint16_t buf_pos = 0;
 
             for (uint16_t i = 0; i < len; ++i) {
                 uint8_t font_idx = str[i] - ' ';
@@ -250,16 +291,27 @@ void Display_DrawString(uint16_t x, uint16_t y, const char *str, uint16_t fg_col
                         if (cur_x >= total_wid)
                             break;
 
-                        if (is_px)
-                            SPI_Send16(fg_color);
-                        else
-                            SPI_Send16(bg_color);
-
+                        if (is_px) {
+                            line_buf[work_idx][buf_pos++] = fg_color_msb;
+                            line_buf[work_idx][buf_pos++] = fg_color_lsb;
+                        } else {
+                            line_buf[work_idx][buf_pos++] = bg_color_msb;
+                            line_buf[work_idx][buf_pos++] = bg_color_lsb;
+                        }
                         cur_x++;
                     }
                 }
             }
+
+            /* TODO: add actual scheduler logic here */
+            while (dma_busy) {} /* wait til it ends sending previous line */
+
+            /* send new line and swap bufs */
+            DMA_Transmit(line_buf[work_idx], total_wid * 2);
+            work_idx = !work_idx;
         }
 
+    /* TODO: add actual scheduler logic here */
+    while (dma_busy) {}
     SPI_End();
 }
