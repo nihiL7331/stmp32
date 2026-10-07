@@ -1,0 +1,15 @@
+build/
+out/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+compile_commands.json
+
+*.o
+*.a
+*.elf
+*.bin
+*.hex
+*.map
+*.su
+*.log
