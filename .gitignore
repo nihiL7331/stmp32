@@ -4,6 +4,7 @@ CMakeCache.txt
 CMakeFiles/
 Makefile
 compile_commands.json
+log_error.txt
 
 *.o
 *.a
