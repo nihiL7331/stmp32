@@ -28,8 +28,8 @@ static inline void SPI_BeginData(void) {
 }
 
 static inline void SPI_WaitDMA(void) {
-    while (!LL_DMA_IsActiveFlag_TC3(DISP_DMA)) {} /* wait til DMA finishes */
-    while (LL_SPI_IsActiveFlag_BSY(DISP_SPI)) {}  /* wait til bytes finished sending */
+    while (dma_busy) {}                          /* wait til DMA finishes */
+    while (LL_SPI_IsActiveFlag_BSY(DISP_SPI)) {} /* wait til bytes finished sending */
     LL_SPI_DisableDMAReq_TX(DISP_SPI);
 }
 
