@@ -143,6 +143,8 @@ void Display_SendData(uint8_t data) {
 }
 
 void Display_Init(void) {
+    LL_mDelay(ST7789V_DELAY_STARTUP); /* VCC pins voltage stabilization */
+
     /* hw reset */
     LL_GPIO_ResetOutputPin(DISP_PORT_B, DISP_RST_PIN);
     LL_mDelay(ST7789V_DELAY_HWRESET);

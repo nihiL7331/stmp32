@@ -119,6 +119,7 @@
 #define ST7789V_DELAY_SWRESET 150 /* after software reset */
 #define ST7789V_DELAY_SLPOUT  120 /* after Sleep Out command */
 #define ST7789V_DELAY_STATE   10  /* after enabling display */
+#define ST7789V_DELAY_STARTUP 100 /* on hardware startup */
 
 /* ST7789V display (in px) */
 #define ST7789V_DISP_WID 240
