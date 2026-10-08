@@ -175,6 +175,8 @@ void Display_Init(void) {
     /* enable the display itself */
     Display_SendCommand(ST7789V_CMD_DISPON);
     LL_mDelay(ST7789V_DELAY_STATE);
+
+    Display_FillScreen(0x0000);
 }
 
 void Display_SetWindow(uint16_t start_x, uint16_t start_y, uint16_t end_x, uint16_t end_y) {
