@@ -99,7 +99,6 @@ int main(void) {
     /* USER CODE BEGIN 2 */
     Display_InitHardware();
     Display_Init();
-    Display_FillScreen(0x0000);
     /* USER CODE END 2 */
 
     /* Infinite loop */

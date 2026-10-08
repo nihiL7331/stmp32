@@ -345,3 +345,10 @@ void Display_DrawBitmap(uint16_t x, uint16_t y, uint16_t wid, uint16_t hei, cons
     SPI_WaitDMA();
     SPI_End();
 }
+
+void DMA2_Stream3_IRQHandler(void) {
+    if (LL_DMA_IsActiveFlag_TC3(DISP_DMA)) { /* check if transfer complete on stream 3 */
+        LL_DMA_ClearFlag_TC3(DISP_DMA);
+        dma_busy = 0;
+    }
+}

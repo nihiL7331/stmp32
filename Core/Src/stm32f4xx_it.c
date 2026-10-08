@@ -22,7 +22,7 @@
 #include "stm32f4xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "display.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -58,7 +58,7 @@
 /* External variables --------------------------------------------------------*/
 
 /* USER CODE BEGIN EV */
-extern uint8_t dma_busy;
+
 /* USER CODE END EV */
 
 /******************************************************************************/
@@ -200,10 +200,5 @@ void SysTick_Handler(void)
 /******************************************************************************/
 
 /* USER CODE BEGIN 1 */
-static inline void DMA2_Stream3_IRQHandler(void) {
-    if (LL_DMA_IsActiveFlag_TC3(DISP_DMA)) { /* check if transfer complete on stream 3 */
-        LL_DMA_ClearFlag_TC3(DISP_DMA);
-        dma_busy = 0;
-    }
-}
+
 /* USER CODE END 1 */
