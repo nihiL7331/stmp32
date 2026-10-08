@@ -67,7 +67,11 @@ static inline void DMA_Transmit(const uint8_t *buf, uint16_t len) {
     LL_DMA_DisableStream(DISP_DMA, DISP_DMA_STREAM); /* disable stream before reconfiguring */
     while (LL_DMA_IsEnabledStream(DISP_DMA, DISP_DMA_STREAM)) {}
 
-    LL_DMA_ClearFlag_TC3(DISP_DMA); /* clear TC for stream 3 used here */
+    /* clear flags for stream 3 used here */
+    LL_DMA_ClearFlag_TC3(DISP_DMA);
+    LL_DMA_ClearFlag_HT3(DISP_DMA);
+    LL_DMA_ClearFlag_TE3(DISP_DMA);
+
     LL_DMA_SetMemoryAddress(DISP_DMA, DISP_DMA_STREAM, (uint32_t)buf); /* set up transmitted data */
     LL_DMA_SetDataLength(DISP_DMA, DISP_DMA_STREAM, len);
 
