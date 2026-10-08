@@ -228,7 +228,7 @@ void Display_FillRect(uint16_t x, uint16_t y, uint16_t wid, uint16_t hei, uint16
     }
 
     /* TODO: add actual scheduler logic here */
-    while (dma_busy) {}
+    SPI_WaitDMA();
     SPI_End();
 }
 
@@ -316,7 +316,7 @@ void Display_DrawString(uint16_t x, uint16_t y, const char *str, uint16_t fg_col
         }
 
     /* TODO: add actual scheduler logic here */
-    while (dma_busy) {}
+    SPI_WaitDMA();
     SPI_End();
 }
 
@@ -338,6 +338,6 @@ void Display_DrawBitmap(uint16_t x, uint16_t y, uint16_t wid, uint16_t hei, cons
     }
 
     /* TODO: add actual scheduler logic here */
-    while (dma_busy) {}
+    SPI_WaitDMA();
     SPI_End();
 }
