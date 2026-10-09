@@ -70,14 +70,14 @@ void Error_Handler(void);
 /* Private defines -----------------------------------------------------------*/
 #define BTN_ACTION_Pin LL_GPIO_PIN_1
 #define BTN_ACTION_GPIO_Port GPIOA
-#define SD_CS_Pin LL_GPIO_PIN_3
-#define SD_CS_GPIO_Port GPIOA
 #define DISP_CS_Pin LL_GPIO_PIN_4
 #define DISP_CS_GPIO_Port GPIOA
-#define DISP_RES_Pin LL_GPIO_PIN_1
+#define DISP_RES_Pin LL_GPIO_PIN_0
 #define DISP_RES_GPIO_Port GPIOB
-#define DISP_DC_Pin LL_GPIO_PIN_2
+#define DISP_DC_Pin LL_GPIO_PIN_1
 #define DISP_DC_GPIO_Port GPIOB
+#define SD_CS_Pin LL_GPIO_PIN_15
+#define SD_CS_GPIO_Port GPIOA
 #define ENC_SW_Pin LL_GPIO_PIN_8
 #define ENC_SW_GPIO_Port GPIOB
 

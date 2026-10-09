@@ -22,6 +22,8 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "display.h"
+#include "ff.h"
+#include <stdio.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -42,8 +44,11 @@
 /* Private variables ---------------------------------------------------------*/
 I2S_HandleTypeDef hi2s2;
 
-/* USER CODE BEGIN PV */
+SPI_HandleTypeDef hspi3;
 
+/* USER CODE BEGIN PV */
+static FATFS fs;
+static FIL   fil;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -53,6 +58,7 @@ static void MX_GPIO_Init(void);
 static void MX_I2S2_Init(void);
 static void MX_SPI1_Init(void);
 static void MX_TIM4_Init(void);
+static void MX_SPI3_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -96,9 +102,25 @@ int main(void) {
     MX_I2S2_Init();
     MX_SPI1_Init();
     MX_TIM4_Init();
+    MX_SPI3_Init();
     /* USER CODE BEGIN 2 */
+    LL_GPIO_SetOutputPin(SD_CS_GPIO_Port, SD_CS_Pin); /* SPI lines high before bus activity */
+    LL_GPIO_SetOutputPin(DISP_CS_GPIO_Port, DISP_CS_Pin);
+
+    LL_SPI_Enable(SPI1);
+    LL_SPI_Enable(SPI3);
+
     Display_InitHardware();
     Display_Init();
+
+    FRESULT fr = f_mount(&fs, "0:", 1); /* drive 0, immediate mount */
+    if (fr != FR_OK) {
+        char err_str[32] = {'t', 'e', 's', 't', '\0'};
+        snprintf(err_str, sizeof(err_str), "SD mnt err: %d", fr);
+        Display_DrawString(10, 40, err_str, 0xF800, 0x0000, 1);
+    } else {
+        Display_DrawString(10, 40, "SD mnt succ", 0x07E0, 0x0000, 1);
+    }
     /* USER CODE END 2 */
 
     /* Infinite loop */
@@ -211,10 +233,9 @@ static void MX_SPI1_Init(void) {
     LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOA);
     /**SPI1 GPIO Configuration
     PA5   ------> SPI1_SCK
-    PA6   ------> SPI1_MISO
     PA7   ------> SPI1_MOSI
     */
-    GPIO_InitStruct.Pin        = LL_GPIO_PIN_5 | LL_GPIO_PIN_6 | LL_GPIO_PIN_7;
+    GPIO_InitStruct.Pin        = LL_GPIO_PIN_5 | LL_GPIO_PIN_7;
     GPIO_InitStruct.Mode       = LL_GPIO_MODE_ALTERNATE;
     GPIO_InitStruct.Speed      = LL_GPIO_SPEED_FREQ_VERY_HIGH;
     GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
@@ -241,6 +262,41 @@ static void MX_SPI1_Init(void) {
     /* USER CODE BEGIN SPI1_Init 2 */
 
     /* USER CODE END SPI1_Init 2 */
+}
+
+/**
+ * @brief SPI3 Initialization Function
+ * @param None
+ * @retval None
+ */
+static void MX_SPI3_Init(void) {
+
+    /* USER CODE BEGIN SPI3_Init 0 */
+
+    /* USER CODE END SPI3_Init 0 */
+
+    /* USER CODE BEGIN SPI3_Init 1 */
+
+    /* USER CODE END SPI3_Init 1 */
+    /* SPI3 parameter configuration*/
+    hspi3.Instance               = SPI3;
+    hspi3.Init.Mode              = SPI_MODE_MASTER;
+    hspi3.Init.Direction         = SPI_DIRECTION_2LINES;
+    hspi3.Init.DataSize          = SPI_DATASIZE_8BIT;
+    hspi3.Init.CLKPolarity       = SPI_POLARITY_LOW;
+    hspi3.Init.CLKPhase          = SPI_PHASE_1EDGE;
+    hspi3.Init.NSS               = SPI_NSS_SOFT;
+    hspi3.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_2;
+    hspi3.Init.FirstBit          = SPI_FIRSTBIT_MSB;
+    hspi3.Init.TIMode            = SPI_TIMODE_DISABLE;
+    hspi3.Init.CRCCalculation    = SPI_CRCCALCULATION_DISABLE;
+    hspi3.Init.CRCPolynomial     = 10;
+    if (HAL_SPI_Init(&hspi3) != HAL_OK) {
+        Error_Handler();
+    }
+    /* USER CODE BEGIN SPI3_Init 2 */
+
+    /* USER CODE END SPI3_Init 2 */
 }
 
 /**
@@ -315,7 +371,7 @@ static void MX_GPIO_Init(void) {
     LL_AHB1_GRP1_EnableClock(LL_AHB1_GRP1_PERIPH_GPIOB);
 
     /**/
-    LL_GPIO_ResetOutputPin(GPIOA, SD_CS_Pin | DISP_CS_Pin);
+    LL_GPIO_ResetOutputPin(GPIOA, DISP_CS_Pin | SD_CS_Pin);
 
     /**/
     LL_GPIO_ResetOutputPin(GPIOB, DISP_RES_Pin | DISP_DC_Pin);
@@ -327,7 +383,7 @@ static void MX_GPIO_Init(void) {
     LL_GPIO_Init(BTN_ACTION_GPIO_Port, &GPIO_InitStruct);
 
     /**/
-    GPIO_InitStruct.Pin        = SD_CS_Pin | DISP_CS_Pin;
+    GPIO_InitStruct.Pin        = DISP_CS_Pin | SD_CS_Pin;
     GPIO_InitStruct.Mode       = LL_GPIO_MODE_OUTPUT;
     GPIO_InitStruct.Speed      = LL_GPIO_SPEED_FREQ_LOW;
     GPIO_InitStruct.OutputType = LL_GPIO_OUTPUT_PUSHPULL;
