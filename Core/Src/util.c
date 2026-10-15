@@ -33,7 +33,7 @@ void BootLog_Print(const char *text, uint16_t fg_col, uint16_t bg_col, uint8_t s
     s_log_y += line_step;
 
 #ifdef DEBUG
-    LL_mDelay(150);
+    LL_mDelay(500);
 #endif /* DEBUG */
 }
 
