@@ -197,11 +197,67 @@ DRESULT disk_read(BYTE pdrv, BYTE *buff, LBA_t sector, UINT count) {
     return RES_OK;
 }
 
+/* NOTE: SDHC/SDXC only */
 DRESULT disk_write(BYTE pdrv, const BYTE *buff, LBA_t sector, UINT count) {
-    return RES_WRPRT; /* TODO:, until then read-only */
+    STMP32_ASSERT(pdrv == 0); /* one SD only */
+    if (!count) return RES_PARERR;
+
+    while (count--) {
+        if (SD_SendCmd(CMD24, sector)) {
+            SD_CS_Disable();
+            SD_SPI_Transfer(0xFF);
+
+            return RES_ERROR;
+        }
+
+        SD_SPI_Transfer(0xFF); /* N_WR delay */
+        SD_SPI_Transfer(0xFE); /* data token */
+
+        for (uint16_t i = 0; i < 512; ++i)
+            SD_SPI_Transfer(buff[i]);
+
+        /* CRC bytes */
+        SD_SPI_Transfer(0xFF);
+        SD_SPI_Transfer(0xFF);
+
+        uint8_t resp = SD_SPI_Transfer(0xFF);
+        if ((resp & 0x1F) != 0x05) { /* 0x05 -> data accepted */
+            SD_CS_Disable();
+            SD_SPI_Transfer(0xFF);
+
+            return RES_ERROR;
+        }
+
+        if (SD_WaitReady(500000)) { /* wait for NAND flash programming to finish */
+            SD_CS_Disable();
+            SD_SPI_Transfer(0xFF);
+
+            return RES_ERROR;
+        }
+
+        buff += 512;
+        sector++;
+    }
+
+    SD_CS_Disable();
+    SD_SPI_Transfer(0xFF);
+
+    return RES_OK;
 }
 
 DRESULT disk_ioctl(BYTE pdrv, BYTE cmd, void *buff) {
+    STMP32_ASSERT(pdrv == 0); /* one SD only */
+
+    if (cmd == CTRL_SYNC) {
+        SD_CS_Enable();
+        uint8_t err = SD_WaitReady(500000);
+        SD_CS_Disable();
+
+        SD_SPI_Transfer(0xFF);
+
+        return (err == 0) ? RES_OK : RES_ERROR;
+    }
+
     return RES_OK;
 }
 
