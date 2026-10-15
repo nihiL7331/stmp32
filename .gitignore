@@ -14,3 +14,4 @@ log_error.txt
 *.map
 *.su
 *.log
+.cache/clangd/index
