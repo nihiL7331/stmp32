@@ -113,10 +113,10 @@ int main(void) {
     Display_InitHardware();
     Display_Init();
 
-    FRESULT fr = f_mount(&fs, "0:", 1); /* drive 0, immediate mount */
-    if (fr != FR_OK) {
-        char err_str[32] = {'t', 'e', 's', 't', '\0'};
-        snprintf(err_str, sizeof(err_str), "SD mnt err: %d", fr);
+    FRESULT fr_mnt = f_mount(&fs, "0:", 1); /* drive 0, immediate mount */
+    if (fr_mnt != FR_OK) {
+        char err_str[32];
+        snprintf(err_str, sizeof(err_str), "SD mnt err: %d", fr_mnt);
         Display_DrawString(10, 40, err_str, 0xF800, 0x0000, 1);
     } else {
         Display_DrawString(10, 40, "SD mnt succ", 0x07E0, 0x0000, 1);
