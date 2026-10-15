@@ -14,6 +14,10 @@
 #define SD_PORT_CS SD_CS_GPIO_Port
 #define SD_CS_PIN  SD_CS_Pin
 
+/* SD speed, as passed to SD_SetSpeed */
+#define SD_SPEED_SLOW 0U
+#define SD_SPEED_FAST 1U
+
 void    SD_SetSpeed(uint8_t fast);
 void    SD_CS_Enable(void);
 void    SD_CS_Disable(void);
