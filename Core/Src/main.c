@@ -24,6 +24,7 @@
 #include "display.h"
 #include "ff.h"
 #include "util.h"
+#include "cfg.h"
 #include <stdio.h>
 #include <string.h>
 /* USER CODE END Includes */
@@ -121,36 +122,10 @@ int main(void) {
     FRESULT fr = f_mount(&fs, "0:", 1); /* drive 0, immediate mount */
     if (fr != FR_OK)
         BootLog_Printf(LOG_COL_ERR, LOG_COL_BG, 1, "SD mount err: %d", fr);
-    else
+    else {
         BootLog_Printf(LOG_COL_OK, LOG_COL_BG, 1, "SD mount OK");
 
-    const char *write_msg = "Hello from SD!";
-    UINT        bw        = 0;
-
-    fr = f_open(&fil, "test", FA_WRITE | FA_CREATE_ALWAYS);
-    if (fr != FR_OK)
-        BootLog_Printf(LOG_COL_ERR, LOG_COL_BG, 1, "SD open err: %d", fr);
-    else {
-        fr = f_write(&fil, write_msg, strlen(write_msg), &bw);
-        f_close(&fil); /* flushes buf and updates FAT dir on SD */
-
-        if (fr != FR_OK || bw != strlen(write_msg))
-            BootLog_Printf(LOG_COL_ERR, LOG_COL_BG, 1, "SD write err: %d", fr);
-        else
-            BootLog_Printf(LOG_COL_OK, LOG_COL_BG, 1, "SD write OK (%uB)", bw);
-    }
-
-    char read_buf[32];
-    UINT br = 0;
-
-    fr = f_open(&fil, "test", FA_READ);
-    if (fr != FR_OK)
-        BootLog_Printf(LOG_COL_ERR, LOG_COL_BG, 1, "SD read err: %d", fr);
-    else {
-        f_read(&fil, read_buf, sizeof(read_buf) - 1, &br);
-        read_buf[br] = '\0';
-        f_close(&fil);
-        BootLog_Printf(LOG_COL_INFO, LOG_COL_BG, 1, "SD read: %s", read_buf);
+        Cfg_Init();
     }
 
     BootLog_End();
