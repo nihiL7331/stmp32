@@ -14,9 +14,10 @@
 #ifdef DEBUG
 #define STMP32_ASSERT(expr)                                                                        \
     if (!(expr)) {                                                                                 \
-        BootLog_Printf(LOG_COL_ERR, LOG_COL_BG, "ASSERT %s:%d", __FILE_NAME__, __LINE__);          \
+        BootLog_Printf(LOG_COL_ERR, LOG_COL_BG, 1, "ASSERT %s:%d", __FILE_NAME__, __LINE__);       \
         __BKPT(0);                                                                                 \
-        while (1);                                                                                 \
+        while (1)                                                                                  \
+            ;                                                                                      \
     }
 #else /* !DEBUG */
 #define STMP32_ASSERT(expr) ((void)0)
@@ -30,6 +31,6 @@
 
 void BootLog_Reset(void);
 void BootLog_Print(const char *text, uint16_t fg_col, uint16_t bg_col, uint8_t scale);
-void BootLog_Printf(uint16_t fg_col, uint16_t bg_col, const char *fmt, ...);
+void BootLog_Printf(uint16_t fg_col, uint16_t bg_col, uint8_t scale, const char *fmt, ...);
 
 #endif /* UTIL_H */

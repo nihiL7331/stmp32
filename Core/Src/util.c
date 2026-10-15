@@ -30,8 +30,8 @@ void BootLog_Print(const char *text, uint16_t fg_col, uint16_t bg_col, uint8_t s
     s_log_y += line_step;
 }
 
-void BootLog_Printf(uint16_t fg_col, uint16_t bg_col, const char *fmt, ...) {
     char buf[64];
+void BootLog_Printf(uint16_t fg_col, uint16_t bg_col, uint8_t scale, const char *fmt, ...) {
     va_list args;
 
     va_start(args, fmt);
