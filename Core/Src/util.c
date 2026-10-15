@@ -31,6 +31,10 @@ void BootLog_Print(const char *text, uint16_t fg_col, uint16_t bg_col, uint8_t s
 
     Display_DrawString(BOOTLOG_START_X, s_log_y, text, fg_col, bg_col, scale);
     s_log_y += line_step;
+
+#ifdef DEBUG
+    LL_mDelay(150);
+#endif /* DEBUG */
 }
 
 void BootLog_Printf(uint16_t fg_col, uint16_t bg_col, uint8_t scale, const char *fmt, ...) {
