@@ -82,11 +82,14 @@ static uint8_t SD_SendCmd(uint8_t cmd, uint32_t arg) {
             return res;
     }
 
-    /* free line */
+    /* free line and wait until card is not busy */
     SD_CS_Disable();
     SD_SPI_Transfer(0xFF);
     SD_CS_Enable();
-    SD_SPI_Transfer(0xFF);
+    if (SD_WaitReady(50000) != 0) {
+        SD_CS_Disable();
+        return 0xFF;
+    }
 
     /* send cmd bytes */
     SD_SPI_Transfer(cmd);
