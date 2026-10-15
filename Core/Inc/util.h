@@ -32,5 +32,6 @@
 void BootLog_Reset(void);
 void BootLog_Print(const char *text, uint16_t fg_col, uint16_t bg_col, uint8_t scale);
 void BootLog_Printf(uint16_t fg_col, uint16_t bg_col, uint8_t scale, const char *fmt, ...);
+void BootLog_End(void);
 
 #endif /* UTIL_H */

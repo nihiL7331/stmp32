@@ -9,16 +9,18 @@
 #define BOOTLOG_LINE_PADDING 2U /* vertical gap between lines */
 #define BOOTLOG_SCREEN_H     ST7789V_DISP_HEI
 
-static uint16_t s_log_y = BOOTLOG_START_Y;
+static uint16_t s_log_y         = BOOTLOG_START_Y;
+static uint8_t  s_boot_complete = 0;
 
 void BootLog_Reset(void) {
-    /* if later a `booted` flag will be added, this will need to be handled here. */
-    /* then either make it a no-op or make it an 'assertion' i suppose?           */
+    STMP32_ASSERT(!s_boot_complete);
+
     s_log_y = BOOTLOG_START_Y;
     Display_FillScreen(LOG_COL_BG);
 }
 
 void BootLog_Print(const char *text, uint16_t fg_col, uint16_t bg_col, uint8_t scale) {
+    STMP32_ASSERT(!s_boot_complete);
     STMP32_ASSERT(scale != 0);
 
     uint16_t line_step = (BOOTLOG_FONT_HEIGHT * scale) + BOOTLOG_LINE_PADDING;
@@ -31,8 +33,10 @@ void BootLog_Print(const char *text, uint16_t fg_col, uint16_t bg_col, uint8_t s
     s_log_y += line_step;
 }
 
-    char buf[64];
 void BootLog_Printf(uint16_t fg_col, uint16_t bg_col, uint8_t scale, const char *fmt, ...) {
+    STMP32_ASSERT(!s_boot_complete);
+
+    char    buf[64];
     va_list args;
 
     va_start(args, fmt);
@@ -40,4 +44,8 @@ void BootLog_Printf(uint16_t fg_col, uint16_t bg_col, uint8_t scale, const char 
     va_end(args);
 
     BootLog_Print(buf, fg_col, LOG_COL_BG, scale);
+}
+
+void BootLog_End(void) {
+    s_boot_complete = 1;
 }

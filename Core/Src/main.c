@@ -153,6 +153,7 @@ int main(void) {
         BootLog_Printf(LOG_COL_INFO, LOG_COL_BG, 1, "SD read: %s", read_buf);
     }
 
+    BootLog_End();
     /* USER CODE END 2 */
 
     /* Infinite loop */
