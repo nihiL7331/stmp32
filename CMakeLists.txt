@@ -49,6 +49,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     Core/Src/ff.c
     Core/Src/sd.c
     Core/Src/diskio.c
+    Core/Src/util.c
 )
 
 # Add include paths

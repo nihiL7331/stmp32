@@ -23,7 +23,9 @@
 /* USER CODE BEGIN Includes */
 #include "display.h"
 #include "ff.h"
+#include "util.h"
 #include <stdio.h>
+#include <string.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -112,15 +114,39 @@ int main(void) {
 
     Display_InitHardware();
     Display_Init();
+    BootLog_Reset();
 
-    FRESULT fr_mnt = f_mount(&fs, "0:", 1); /* drive 0, immediate mount */
-    if (fr_mnt != FR_OK) {
-        char err_str[32];
-        snprintf(err_str, sizeof(err_str), "SD mnt err: %d", fr_mnt);
-        Display_DrawString(10, 40, err_str, 0xF800, 0x0000, 1);
-    } else {
-        Display_DrawString(10, 40, "SD mnt succ", 0x07E0, 0x0000, 1);
+    BootLog_Printf(LOG_COL_INFO, LOG_COL_BG, "booting stmp32...");
+
+    FRESULT fr = f_mount(&fs, "0:", 1); /* drive 0, immediate mount */
+    if (fr != FR_OK) BootLog_Printf(LOG_COL_ERR, LOG_COL_BG, "SD mount err: %d", fr);
+    else             BootLog_Printf(LOG_COL_OK,  LOG_COL_BG, "SD mount OK");
+
+    const char *write_msg = "Hello from SD!";
+    UINT bw = 0;
+
+    fr = f_open(&fil, "test", FA_WRITE | FA_CREATE_ALWAYS);
+    if (fr != FR_OK) BootLog_Printf(LOG_COL_ERR, LOG_COL_BG, "SD open err: %d", fr);
+    else {
+        fr = f_write(&fil, write_msg, strlen(write_msg), &bw);
+        f_close(&fil); /* flushes buf and updates FAT dir on SD */
+
+        if (fr != FR_OK || bw != strlen(write_msg)) BootLog_Printf(LOG_COL_ERR, LOG_COL_BG, "SD write err: %d",  fr);
+        else                                        BootLog_Printf(LOG_COL_OK,  LOG_COL_BG, "SD write OK (%uB)", bw);
     }
+
+    char read_buf[32];
+    UINT br = 0;
+
+    fr = f_open(&fil, "test", FA_READ);
+    if (fr != FR_OK) BootLog_Printf(LOG_COL_ERR, LOG_COL_BG, "SD read err: %d", fr);
+    else {
+        f_read(&fil, read_buf, sizeof(read_buf) - 1, &br);
+        read_buf[br] = '\0';
+        f_close(&fil);
+        BootLog_Printf(LOG_COL_INFO, LOG_COL_BG, "SD read: %s", read_buf);
+    }
+
     /* USER CODE END 2 */
 
     /* Infinite loop */
