@@ -1,4 +1,6 @@
-#pragma once
+#ifndef FONT_H
+#define FONT_H
+
 #include <stdint.h>
 
 static const uint8_t terminus_8x16[96][16] = {
@@ -1884,3 +1886,5 @@ static const uint8_t terminus_8x16[96][16] = {
     /* U+007E "~" */
     {0x0, 0x62, 0x92, 0x8c, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0},
 };
+
+#endif /* FONT_H */

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef UTIL_H
+#define UTIL_H
 
 #ifdef DEBUG
 #define STMP32_ASSERT(expr)                                                                        \
@@ -10,3 +11,5 @@
 #else // !DEBUG
 #define STMP32_ASSERT(expr) ((void)0)
 #endif // !DEBUG
+
+#endif /* UTIL_H */

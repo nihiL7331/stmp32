@@ -1,4 +1,5 @@
-#pragma once
+#ifndef DISPLAY_H
+#define DISPLAY_H
 
 #include "stm32f4xx_ll_bus.h"
 #include "stm32f4xx_ll_gpio.h"
@@ -152,3 +153,5 @@ void Display_DrawChar(uint16_t x, uint16_t y, char c, uint16_t fg_color, uint16_
 void Display_DrawString(uint16_t x, uint16_t y, const char *str, uint16_t fg_color,
                         uint16_t bg_color, uint8_t scale);
 void Display_DrawBitmap(uint16_t x, uint16_t y, uint16_t wid, uint16_t hei, const uint8_t *bitmap);
+
+#endif /* DISPLAY_H */

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef SD_H
+#define SD_H
 
 #include <stdint.h>
 #include "main.h"
@@ -22,3 +23,5 @@ void    SD_SetSpeed(uint8_t fast);
 void    SD_CS_Enable(void);
 void    SD_CS_Disable(void);
 uint8_t SD_SPI_Transfer(uint8_t data);
+
+#endif /* SD_H */
