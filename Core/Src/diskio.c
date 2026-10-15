@@ -62,6 +62,16 @@
 
 /* ----------------- helper functions ----------------- */
 
+/* wait until the sd card releases MISO back to 0xFF (implying its not busy programming flash) */
+static uint8_t SD_WaitReady(uint32_t timeout_polls) {
+    uint8_t res;
+    do {
+        res = SD_SPI_Transfer(0xFF);
+    } while (res != 0xFF && --timeout_polls);
+
+    return (res == 0xFF) ? 0 : 1; /* 0 = ready, 1 = timeout */
+}
+
 static uint8_t SD_SendCmd(uint8_t cmd, uint32_t arg) {
     uint8_t n, res;
 
