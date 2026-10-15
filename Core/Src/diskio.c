@@ -174,7 +174,7 @@ DRESULT disk_read(BYTE pdrv, BYTE *buff, LBA_t sector, UINT count) {
             return RES_ERROR;
         }
 
-        uint16_t tmr = 1000;
+        uint32_t tmr = 100000;
         while (SD_SPI_Transfer(0xFF) != 0xFE && --tmr) {} /* wait for 0xFE */
 
         if (tmr == 0) { /* timeout */
