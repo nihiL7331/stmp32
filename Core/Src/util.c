@@ -48,4 +48,5 @@ void BootLog_Printf(uint16_t fg_col, uint16_t bg_col, uint8_t scale, const char 
 
 void BootLog_End(void) {
     s_boot_complete = 1;
+    Display_FillScreen(0x0000);
 }
